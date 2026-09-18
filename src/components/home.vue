@@ -197,6 +197,7 @@
 import { onMounted } from 'vue'
 import '../style.css'
 
+
 export default {
   name: 'Home',
   setup() {
