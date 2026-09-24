@@ -62,7 +62,7 @@
                         <div class="progress-level" style="width: 100%;"></div>
                     </div>
                 </div>
-            <div abilitys-container>
+            <div class="abilitys-container">
                 <p>这是一个简单的喜好/技能介绍，嘻嘻，别夸，我知道我有点牛逼</p>
             </div>
         </div>   
@@ -79,7 +79,7 @@
                     
                     
                 <div class="crooner-left">
-                    <img src="../assets/imm/czyQ版人物形象.jpg" alt="左侧图片" class="cw-image">
+                    <img src="/public/imm/czyQ版人物形象.jpg" alt="左侧图片" class="cw-image">
                 </div>
                 <div class="crooner-czy">
                         <h3>CZY</h3>
@@ -96,7 +96,7 @@
 
 
                 <div class="crooner-left">
-                    <img src="../assets/imm/zrtQ版人物形象.jpg" alt="左侧图片" class="sides-image">
+                    <img src="/public/imm/zrtQ版人物形象.jpg" alt="左侧图片" class="sides-image">
                 </div>
                     <div class="crooner-zrt">
                         <h3>zrt</h3>
@@ -114,7 +114,7 @@
                         <p>我的好朋友，善良大方 遇事冷静 纯情专一男大 喜欢打麻将，学习，打游戏，打网球</p>
                     </div>
                     <div class="crooner-right">
-                        <img src="../assets/imm/lkyQ版人物.png" alt="右侧装饰图片" class="sides-image">
+                        <img src="/public/imm/lkyQ版人物.png" alt="右侧装饰图片" class="sides-image">
                     </div>
                    
                 
@@ -145,7 +145,7 @@
                 <hr>
                 <div class="like-container">
                     <div class="like-left-image">
-                        <img src="../assets/imm/yangYY.png" alt="左侧装饰图片" class="side-image">
+                        <img src="/public/imm/yangYY.png" alt="左侧装饰图片" class="side-image">
                     </div>
                     <div class="like-dyy">
                         <h3>不告诉你</h3>
@@ -158,7 +158,7 @@
                         </p>
                     </div>
                     <div class="like-right-image">
-                        <img src="../assets/imm/youY.jpg" alt="右侧装饰图片" class="side-image">
+                        <img src="/public/imm/youY.jpg" alt="右侧装饰图片" class="side-image">
                     </div>
                 </div>
             </div>
@@ -278,6 +278,53 @@ for(let i=0; i< likedyy.length; i++) {
   }
 }
 
+// export default {
+//     name: 'home',
+
+// setup() {
+//   const croonerCzy = ref(null);
+//   const croonerZrt = ref(null);
+//   // 其他ref...
+  
+//   const toggleClass = (element, className) => {
+//     if (element.value) {
+//       element.value.classList.toggle(className);
+//     }
+//   };
+  
+//   onMounted(() => {
+//     // 导航栏平滑滚动
+//     const navLinks = document.querySelectorAll('nav a');
+//     navLinks.forEach(link => {
+//       link.addEventListener('click', (event) => {
+//         event.preventDefault();
+//         const targetId = link.getAttribute('href');
+//         const targetSection = document.querySelector(targetId);
+//         if (targetSection) {
+//           targetSection.scrollIntoView({ behavior: 'smooth' });
+//         }
+//       });
+//     });
+    
+//     // 返回顶部功能
+//     const toTopBtn = document.getElementById('to-top');
+//     window.addEventListener('scroll', () => {
+//       toTopBtn.style.display = window.pageYOffset > 300 ? 'block' : 'none';
+//     });
+    
+//     toTopBtn.addEventListener('click', () => {
+//       window.scrollTo({ top: 0, behavior: 'smooth' });
+//     });
+//   });
+  
+//   return {
+//     croonerCzy,
+//     croonerZrt,
+//     // 其他ref...
+//     toggleClass
+//   };
+// }
+// }
 
 
 
