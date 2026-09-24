@@ -79,7 +79,7 @@
                     
                     
                 <div class="crooner-left">
-                    <img src="/public/imm/czyQ版人物形象.jpg" alt="左侧图片" class="cw-image">
+                    <img src="../assets/imm/czyQ版人物形象.jpg" alt="左侧图片" class="cw-image">
                 </div>
                 <div class="crooner-czy">
                         <h3>CZY</h3>
@@ -96,7 +96,7 @@
 
 
                 <div class="crooner-left">
-                    <img src="/public/imm/zrtQ版人物形象.jpg" alt="左侧图片" class="sides-image">
+                    <img src="../assets/imm/zrtQ版人物形象.jpg" alt="左侧图片" class="sides-image">
                 </div>
                     <div class="crooner-zrt">
                         <h3>zrt</h3>
@@ -114,7 +114,7 @@
                         <p>我的好朋友，善良大方 遇事冷静 纯情专一男大 喜欢打麻将，学习，打游戏，打网球</p>
                     </div>
                     <div class="crooner-right">
-                        <img src="/public/imm/lkyQ版人物.png" alt="右侧装饰图片" class="sides-image">
+                        <img src="../assets/imm/lkyQ版人物.png" alt="右侧装饰图片" class="sides-image">
                     </div>
                    
                 
@@ -145,7 +145,7 @@
                 <hr>
                 <div class="like-container">
                     <div class="like-left-image">
-                        <img src="/public/imm/yangYY.png" alt="左侧装饰图片" class="side-image">
+                        <img src="../assets/imm/yangYY.png" alt="左侧装饰图片" class="side-image">
                     </div>
                     <div class="like-dyy">
                         <h3>不告诉你</h3>
@@ -158,7 +158,7 @@
                         </p>
                     </div>
                     <div class="like-right-image">
-                        <img src="/public/imm/youY.jpg" alt="右侧装饰图片" class="side-image">
+                        <img src="../assets/imm/youY.jpg" alt="右侧装饰图片" class="side-image">
                     </div>
                 </div>
             </div>

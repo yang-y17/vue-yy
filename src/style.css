@@ -146,7 +146,7 @@ section p{
     
 }
 .crooner-czy.czyy{
-    background-image:url(/public/imm/czy.jpg);
+    background-image:url(../src/assets/imm/czy.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -166,7 +166,7 @@ section p{
     
 }
 .crooner-whl.whll{
-    background-image:url(/public/imm/whl.jpg);
+    background-image:url(../src/assets/imm/whl.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -185,7 +185,7 @@ section p{
     
 }
 .crooner-zrt.zrtt{
-    background-image:url(/public/imm/zrt.jpg);
+    background-image:url(../src/assets/imm/zrt.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -206,7 +206,7 @@ section p{
     z-index: 2;
 }
 .crooner-lky.lkyy{
-    background-image:url(/public/imm/lky.jpg);
+    background-image:url(../src/assets/imm/lky.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
