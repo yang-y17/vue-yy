@@ -8,9 +8,9 @@ export default defineConfig({
   build: {
     rolldownOptions:{
       output:{
-        entryFileNames: 'assets/[name].js',
-        chunkFileNames: 'assets/[name].js',
-        assetFileNames: 'assets/[name].[ext]'
+        entryFileNames: 'public/assets/[name].js',
+        chunkFileNames: 'public/assets/[name].js',
+        assetFileNames: 'public/assets/[name].[ext]'
       }
     }
   }
