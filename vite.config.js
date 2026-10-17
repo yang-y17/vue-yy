@@ -6,13 +6,13 @@ export default defineConfig({
   base: '/vue-yy/' ,
   plugins: [vue()],
   build: {
-    // rolldownOptions:{
-    //   output:{
-    //     entryFileNames: 'public/assets/[name].js',
-    //     chunkFileNames: 'public/assets/[name].js',
-    //     assetFileNames: 'public/assets/[name].[ext]'
-    //   }
-    // }
+    rollupOptions: {
+      output: {
+        chunkFileNames: 'assets/js/[name]-[hash].js',
+        entryFileNames: 'assets/js/[name]-[hash].js',
+        assetFileNames: 'assets/[ext]/[name]-[hash].[ext]'
+      }
+    }
   }
   
 })
