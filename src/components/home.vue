@@ -17,6 +17,7 @@
                     <li><a href="#about">关于</a></li>
                     <li><a href="#abilitys">我的爱好/技能</a></li>
                     <li><a href="#crooner">^-^</a></li>
+                    <li><a href="#portfolio-downloader">作品集</a></li>
                     <!-- <li><a href="#like">喜欢</a></li> -->
                     <li><a href="#contact">联系方式</a></li>
                 </ul>
@@ -174,6 +175,20 @@
             
         </section>
 
+        <section id="portfolio-downloader">
+            <h2>作品集</h2>
+            <hr>
+            <div class="portfolio-list">
+                <div class="lianjie">
+                    <a href="https://yang-y17.github.io/happy-birthday/">
+                        <img class="downloader" :src="cardImage" alt="个人网页">
+                    </a>
+                </div>
+                
+
+            </div>
+        </section>
+
         <!-- <section id="like">
             <div class = "container">
                 <h2>喜欢的人</h2>
@@ -233,6 +248,7 @@
 <script>
 import { onMounted,ref } from 'vue'
 import '../style.css'
+import cardImage from '../assets/imm/download.png'
 
 
 
@@ -477,7 +493,8 @@ export default {
     return {
       progress1, progress2, progress3, progress4,  // 导出进度条的值
       setProgressp1, setProgressp2, setProgressp3, setProgressp4,  // 导出控制显示的值
-      startProgress  // 导出启动进度条动画的函数
+      startProgress, // 导出启动进度条动画的函数
+      cardImage
     };
   }  // setup函数结束
 }  // 组件定义结束

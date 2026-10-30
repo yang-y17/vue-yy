@@ -2,9 +2,11 @@
 
 import home from './components/home.vue'
 
+
 export default {
     components:{
-        home
+        home,
+        
     }
 }
 </script>
@@ -12,5 +14,6 @@ export default {
 <template>
 
     <home/>
+    
  
 </template>

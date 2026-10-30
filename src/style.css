@@ -478,6 +478,45 @@ section p{
   overflow: hidden;
 }
 
+/* 作品 */
+#portfolio-downloader{
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 20px auto;
+}
+
+/* 给卡片设规距 */
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 17px;
+    margin-top: 20px;
+}
+
+/* 设计卡片样式 */
+.downloader{
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 42px;
+}
+
+.lianjie{
+    flex: 0 1 320px;
+    width: 320px;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.lianjie:hover{
+    transform: scale(1.05);
+    transition: transform 0.5s ease-in-out;
+}
+
 
 /*响应式布局*/
 /* 平板设备 */
@@ -523,6 +562,37 @@ section p{
     section p {
         font-size: 16px;
         padding: 0 20px;
+    }
+
+    /* 作品集：移动端横向滑动浏览 */
+    .portfolio-downloader {
+        padding: 0;
+    }
+
+    .portfolio-list {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        gap: 16px;
+        padding: 0 20px 12px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        /* mandatroy表示吸附 */
+        scroll-padding-inline: 20px;
+        overscroll-behavior-inline: contain;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .portfolio-list::-webkit-scrollbar {
+        display: none;
+    }
+
+    .lianjie {
+        flex: 0 0 calc(100vw - 64px);
+        width: calc(100vw - 64px);
+        max-width: 360px;
+        scroll-snap-align: center;
     }
 
     /* crooner-container 适配 */
