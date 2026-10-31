@@ -223,7 +223,8 @@
             <div class="contact-info">
                 <p>hello,如果你想想找我，可以联系我</p>
                 <p>但是！！！如果我没有回复！说明我在睡觉，请不要继续打扰，谢谢！！！</p>            
-                <p>邮箱:2461480007@qq.com</p>
+                <p>邮箱:<a href="mailto:2461480007@qq.com">2461480007@qq.com</a></p>
+                <p>GitHub:<a href="https://github.com/yang-y17" target="_blank" rel="noopener noreferrer">yang-y17</a></p>
                 <p>电话:不告诉你</p>
             </div>
         </div>
