@@ -1,7 +1,7 @@
 <template>
 <main>
     <!-- <link rel="stylesheet" href="/src/assets/font/iconfont.css"> -->
-     <link rel="icon" type="image/svg+xml" href=".favicon.svg" />
+     <!-- <link rel="icon" type="image/svg+xml" href=".favicon.svg" /> -->
     <button id="to-top" style="display: none;">
         <svg class="icon" aria-hidden="true">
     <use xlink:href="#icon-fanhuitubiao"></use>
