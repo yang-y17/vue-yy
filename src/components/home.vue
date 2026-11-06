@@ -12,7 +12,7 @@
                 <a class="brand" href="#top" aria-label="返回首页顶部">
                     <span class="brand-mark">Y</span>
                     <span class="brand-copy">
-                        <strong>Yky</strong>
+                        <strong>羊开饭</strong>
                         <small>PERSONAL SPACE</small>
                     </span>
                 </a>
@@ -51,10 +51,11 @@
                 <!-- 主介绍内容，带有淡入动画效果 -->
                 <div data-reveal>
                     <p class="eyebrow">Hello, world</p>
-                    <h1>你好，我是 <span>Yky</span>。</h1>
+                    <h1>你好，我是 <span>羊开饭</span>。</h1>
                     <p class="hero-lead">
                         喜欢编写好玩的东西，也喜欢看世界、运动和自由地生活。
                         我相信多元化的体验会让代码不只是逻辑的堆砌，也是一种表达。
+                        我喜欢薛之谦,我们的心愿是世界和平！天天开心！！
                     </p>
 
                     <!-- 行动按钮区域 -->
@@ -76,10 +77,11 @@
                         写代码、交朋友、认真生活，也认真记录那些值得记住的瞬间。
                     </p>
                     <div class="hero-tags" aria-label="个人关键词">
-                        <span>Vue / Web</span>
+                        <span>HTML</span>
                         <span>运动</span>
                         <span>自由</span>
                         <span>薛之谦</span>
+                        <span>世界和平</span>>
                     </div>
                 </aside>
             </div>
@@ -98,11 +100,13 @@
                 <div class="about-grid">
                     <!-- 个人介绍文本，带有淡入动画效果 -->
                     <p class="about-copy" data-reveal>
-                        我是一名来自中国的大学生，喜欢编写好玩的东西，喜欢挑战自我。
-                        我热衷于探索新的技术和工具。除技术外，也喜欢游玩世界、看世界、运动，
+                            我是一名来自中国的大学生，喜欢编写好玩的东西，喜欢去研究新的好玩的东西，喜欢挑战自我。
+                        我热衷于探索新的技术和工具。除技术外，也喜欢游玩世界、看世界、运动、拍照
                         很向往自由，也喜欢一些美好的事物。
                         我相信多元化的生活体验能够激发更好的创造力，让我的代码不仅仅是逻辑的堆砌，
                         更是<strong>艺术的表达</strong>。
+                        <br>
+                            喜欢安静的呆着干自己的事，或是静静的呆着。
                     </p>
 
                     <!-- 个人特点卡片，带有淡入动画效果 -->
@@ -128,6 +132,13 @@
                                 <span>认真感受每一种生活体验</span>
                             </span>
                         </div>
+                        <div class="fact">
+                            <span class="fact-index">04</span>
+                            <span>
+                                <strong>记录生活</strong>
+                                <span>记录每一个热爱生活的瞬间</span>
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -140,7 +151,7 @@
                 <div class="section-heading center" data-reveal>
                     <p class="eyebrow">Skills &amp; interests</p>
                     <h2>我的爱好 / 技能</h2>
-                    <p>进度条进入视野后自动展开，不再需要数字按钮。</p>
+                    <!-- <p>进度条进入视野后自动展开，不再需要数字按钮。</p> -->
                     <div class="title-rule"></div>
                 </div>
 
@@ -199,7 +210,7 @@
                 <div class="section-heading center" data-reveal>
                     <p class="eyebrow">My friends</p>
                     <h2>我的好朋友们</h2>
-                    <p>点击任意卡片查看照片，也可以使用键盘切换。</p>
+                    <p>点击任意卡片查看照片。</p>
                     <div class="title-rule"></div>
                 </div>
 
@@ -413,7 +424,7 @@
         <!-- 页脚区域 -->
         <footer class="site-footer">
             <div class="shell footer-inner">
-                <p>版权所有 Yky · 个人网页</p>
+                <p>版权所有 羊开饭 · 个人网页</p>
                 <p class="footer-motto">天天开心，永远幸福，世界和平。</p>
             </div>
         </footer>

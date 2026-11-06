@@ -716,6 +716,7 @@
             .memory-side {
                 position: relative; /* 设置元素的定位方式 */
                 height: 290px; /* 设置元素高度 */
+                /* width: 180px; */
                 overflow: hidden; /* 设置内容超出元素后的处理方式 */
                 border-radius: 22px; /* 设置圆角 */
                 box-shadow: 0 15px 38px rgba(44, 42, 41, 0.13); /* 设置盒子的阴影 */
