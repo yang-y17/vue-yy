@@ -708,14 +708,14 @@
 
             .like-stage {
                 display: grid; /* 设置元素的显示方式 */
-                grid-template-columns: 180px minmax(0, 1fr) 180px; /* 设置网格的列数和列宽 */
+                grid-template-columns: 220px minmax(0, 1fr) 220px; /* 设置网格的列数和列宽 */
                 align-items: center; /* 设置子元素的垂直对齐 */
                 gap: 22px; /* 设置子元素之间的间距 */
             }
 
             .memory-side {
                 position: relative; /* 设置元素的定位方式 */
-                height: 290px; /* 设置元素高度 */
+                height: 300px; /* 设置元素高度 */
                 /* width: 180px; */
                 overflow: hidden; /* 设置内容超出元素后的处理方式 */
                 border-radius: 22px; /* 设置圆角 */
@@ -724,10 +724,14 @@
 
             .memory-side::after {
                 content: ""; /* 设置伪元素生成的内容 */
-                position: absolute; /* 设置元素的定位方式 */
+                position: absolute;
                 inset: 0; /* 同时设置上下左右四个方向的距离 */
-                background: linear-gradient(to top, rgba(9, 23, 39, 0.25), transparent 45%); /* 设置背景颜色或背景图 */
+                
+                border-radius: 22px; /* 设置圆角 */
+                box-shadow: 0 15px 38px rgba(44, 42, 41, 0.13); /* 设置盒子的阴影 */
             }
+
+            
 
             .memory-side img {
                 width: 100%; /* 设置元素宽度 */
@@ -909,7 +913,7 @@
                 }
 
                 .like-stage {
-                    grid-template-columns: 150px minmax(0, 1fr) 150px; /* 设置网格的列数和列宽 */
+                    grid-template-columns: 180px minmax(0, 1fr) 180px; /* 设置网格的列数和列宽 */
                     gap: 14px; /* 设置子元素之间的间距 */
                 }
 
