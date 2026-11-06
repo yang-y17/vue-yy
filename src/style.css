@@ -1,161 +1,173 @@
+/*
+ * 样式文件逐项说明：
+ * 选择器决定“改哪一个元素”，花括号中的属性决定“改成什么样”。
+ * 手机端样式放在文件末尾的 @media 区域。
+ */
+
+/*
+ * 样式文件逐项说明：
+ * 选择器决定“改哪一个元素”，花括号中的属性决定“改成什么样”。
+ * 手机端样式放在文件末尾的 @media 区域。
+ */
+
 :root {
-                --navy: #0b1f35;
-                --navy-soft: #15293d;
-                --ink: #10233a;
-                --muted: #657181;
-                --blue: #4677e8;
-                --blue-soft: #dfe9ff;
-                --cream: #f7f5ef;
-                --paper: #ffffff;
-                --line: #dbe2ea;
-                --shadow: 0 18px 50px rgba(15, 35, 58, 0.11);
-                --radius-lg: 28px;
-                --radius-md: 18px;
-                --content: 1120px;
+                --navy: #0b1f35; /* 深色背景和导航栏 */
+                --navy-soft: #15293d; /* 较浅的深蓝色 */
+                --ink: #10233a; /* 标题和正文的主要颜色 */
+                --muted: #657181; /* 次要说明文字颜色 */
+                --blue: #4677e8; /* 主要强调色 */
+                --blue-soft: #dfe9ff; /* 浅蓝背景 */
+                --cream: #f7f5ef; /* 暖白色背景 */
+                --paper: #ffffff; /* 页面主背景 */
+                --line: #dbe2ea; /* 分隔线颜色 */
+                --shadow: 0 18px 50px rgba(15, 35, 58, 0.11); /* 卡片阴影 */
+                --radius-lg: 28px; /* 大圆角 */
+                --radius-md: 18px; /* 中等圆角 */
+                --content: 1120px; /* 桌面内容最大宽度 */
             }
 
             *,
             *::before,
             *::after {
-                box-sizing: border-box;
+                box-sizing: border-box; /* 设置宽度和高度的计算方式 */
             }
 
             html {
-                scroll-behavior: smooth;
-                scroll-padding-top: 94px;
+                scroll-behavior: smooth; /* 设置页面滚动方式 */
+                scroll-padding-top: 94px; /* 滚动定位时给顶部导航留出空间 */
             }
 
             body {
-                margin: 0;
-                color: var(--ink);
-                background: var(--paper);
-                font-family:
+                margin: 0; /* 设置外边距 */
+                color: var(--ink); /* 设置文字颜色 */
+                background: var(--paper); /* 设置背景颜色或背景图 */
+                font-family: /* 设置使用的字体 */
                     system-ui,
                     -apple-system,
                     "Segoe UI",
                     "Microsoft YaHei",
                     sans-serif;
-                line-height: 1.7;
-                -webkit-font-smoothing: antialiased;
+                line-height: 1.7; /* 设置行高 */
+                -webkit-font-smoothing: antialiased; /* 让字体边缘更平滑 */
             }
 
             button,
             a {
-                font: inherit;
+                font: inherit; /* 设置字体相关样式 */
             }
 
             button {
-                color: inherit;
+                color: inherit; /* 设置文字颜色 */
             }
 
             a {
-                color: inherit;
+                color: inherit; /* 设置文字颜色 */
             }
 
             img {
-                display: block;
-                max-width: 100%;
+                display: block; /* 设置元素的显示方式 */
+                max-width: 100%; /* 设置最大宽度 */
             }
 
             .skip-link {
-                position: fixed;
-                top: 10px;
-                left: 10px;
-                z-index: 1000;
-                padding: 10px 16px;
-                color: var(--navy);
-                background: #fff;
-                border-radius: 9px;
-                transform: translateY(-160%);
-                transition: transform 0.2s ease;
+                position: fixed; /* 设置元素的定位方式 */
+                top: 10px; /* 设置距顶部的距离 */
+                left: 10px; /* 设置距左侧的距离 */
+                z-index: 1000; /* 设置元素的叠放层级 */
+                padding: 10px 16px; /* 设置内边距 */
+                color: var(--navy); /* 设置文字颜色 */
+                background: #fff; /* 设置背景颜色或背景图 */
+                border-radius: 9px; /* 设置圆角 */
+                transform: translateY(-160%); /* 设置旋转、缩放或移动 */
+                transition: transform 0.2s ease; /* 设置样式变化时的过渡动画 */
             }
 
             .skip-link:focus {
-                transform: translateY(0);
+                transform: translateY(0); /* 设置旋转、缩放或移动 */
             }
 
             .shell {
-                width: min(var(--content), calc(100% - 48px));
-                margin-inline: auto;
+                width: min(var(--content), calc(100% - 48px)); /* 设置元素宽度 */
+                margin-inline: auto; /* 设置左右外边距 */
             }
 
             .site-header {
-                position: sticky;
-                top: 0;
-                z-index: 50;
-                color: #fff;
-                background: rgba(11, 31, 53, 0.94);
-                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-                backdrop-filter: blur(18px);
+                position: sticky; /* 设置元素的定位方式 */
+                top: 0; /* 设置距顶部的距离 */
+                z-index: 50; /* 设置元素的叠放层级 */
+                color: #fff; /* 设置文字颜色 */
+                background: rgba(11, 31, 53, 0.94); /* 设置背景颜色或背景图 */
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* 设置下方边框 */
+                backdrop-filter: blur(18px); /* 设置元素背后的模糊效果 */
             }
 
             .site-nav {
-                min-height: 76px;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                gap: 30px;
+                min-height: 76px; /* 设置最小高度 */
+                display: flex; /* 设置元素的显示方式 */
+                align-items: center; /* 设置子元素的垂直对齐 */
+                justify-content: space-between; /* 设置子元素的水平对齐 */
+                gap: 30px; /* 设置子元素之间的间距 */
             }
 
             .brand {
-                display: inline-flex;
-                align-items: center;
-                gap: 12px;
-                flex: 0 0 auto;
-                color: #fff;
-                text-decoration: none;
+                display: inline-flex; /* 设置元素的显示方式 */
+                align-items: center; /* 设置子元素的垂直对齐 */
+                gap: 12px; /* 设置子元素之间的间距 */
+                flex: 0 0 auto; /* 设置弹性子元素的放大、缩小和基础宽度 */
+                color: #fff; /* 设置文字颜色 */
+                text-decoration: none; /* 设置文字装饰线 */
             }
 
             .brand-mark {
-                width: 40px;
-                height: 40px;
-                display: grid;
-                place-items: center;
-                border-radius: 13px;
-                color: var(--navy);
-                background: linear-gradient(135deg, #f6e879, #f7b4ca);
-                font-weight: 900;
-                letter-spacing: -0.05em;
-                box-shadow: 0 7px 20px rgba(246, 232, 121, 0.2);
+                width: 40px; /* 设置元素宽度 */
+                height: 40px; /* 设置元素高度 */
+                display: grid; /* 设置元素的显示方式 */
+                place-items: center; /* 同时设置网格内容的水平和垂直对齐 */
+                border-radius: 13px; /* 设置圆角 */
+                color: var(--navy); /* 设置文字颜色 */
+                background: linear-gradient(135deg, #f6e879, #f7b4ca); /* 设置背景颜色或背景图 */
+                font-weight: 900; /* 设置文字粗细 */
+                letter-spacing: -0.05em; /* 设置文字间距 */
+                box-shadow: 0 7px 20px rgba(246, 232, 121, 0.2); /* 设置盒子的阴影 */
             }
 
             .brand-copy {
-                display: grid;
-                line-height: 1.15;
+                display: grid; /* 设置元素的显示方式 */
+                line-height: 1.15; /* 设置行高 */
             }
 
             .brand-copy strong {
-                font-size: 18px;
-                letter-spacing: 0.02em;
+                font-size: 18px; /* 设置文字大小 */
+                letter-spacing: 0.02em; /* 设置文字间距 */
             }
 
             .brand-copy small {
-                margin-top: 4px;
-                color: rgba(255, 255, 255, 0.6);
-                font-size: 11px;
-                letter-spacing: 0.12em;
+                margin-top: 4px; /* 设置上方外边距 */
+                color: rgba(255, 255, 255, 0.6); /* 设置文字颜色 */
+                font-size: 11px; /* 设置文字大小 */
+                letter-spacing: 0.12em; /* 设置文字间距 */
             }
 
             .nav-links {
-                display: flex;
-                align-items: center;
-                gap: 8px;
-                overflow-x: auto;
-                scrollbar-width: none;
+                display: flex; /* 设置元素的显示方式 */
+                align-items: center; /* 设置子元素的垂直对齐 */
+                gap: 8px; /* 设置子元素之间的间距 */
+                overflow-x: auto; /* 设置横向内容溢出方式 */
+                scrollbar-width: none; /* 设置滚动条宽度 */
             }
 
             .nav-links::-webkit-scrollbar {
-                display: none;
+                display: none; /* 设置元素的显示方式 */
             }
 
             .nav-links a {
-                flex: 0 0 auto;
-                padding: 8px 13px;
-                color: rgba(255, 255, 255, 0.66);
-                border-radius: 999px;
-                text-decoration: none;
-                font-size: 14px;
-                transition:
+                flex: 0 0 auto; /* 设置弹性子元素的放大、缩小和基础宽度 */
+                padding: 8px 13px; /* 设置内边距 */
+                color: rgba(255, 255, 255, 0.66); /* 设置文字颜色 */
+                border-radius: 999px; /* 设置圆角 */
+                text-decoration: none; /* 设置文字装饰线 */
+                font-size: 14px; /* 设置文字大小 */
+                transition: /* 设置样式变化时的过渡动画 */
                     color 0.2s ease,
                     background 0.2s ease;
             }
@@ -163,896 +175,896 @@
             .nav-links a:hover,
             .nav-links a:focus-visible,
             .nav-links a.is-active {
-                color: #fff;
-                background: rgba(255, 255, 255, 0.1);
+                color: #fff; /* 设置文字颜色 */
+                background: rgba(255, 255, 255, 0.1); /* 设置背景颜色或背景图 */
             }
 
             .hero {
-                position: relative;
-                min-height: 620px;
-                display: grid;
-                align-items: center;
-                overflow: hidden;
-                color: #fff;
-                background:
+                position: relative; /* 设置元素的定位方式 */
+                min-height: 620px; /* 设置最小高度 */
+                display: grid; /* 设置元素的显示方式 */
+                align-items: center; /* 设置子元素的垂直对齐 */
+                overflow: hidden; /* 设置内容超出元素后的处理方式 */
+                color: #fff; /* 设置文字颜色 */
+                background: /* 设置背景颜色或背景图 */
                     radial-gradient(circle at 82% 18%, rgba(70, 119, 232, 0.34), transparent 30%),
                     radial-gradient(circle at 12% 90%, rgba(246, 232, 121, 0.13), transparent 28%),
                     linear-gradient(145deg, #08192c 0%, #102b48 62%, #153858 100%);
             }
 
             .hero::before {
-                content: "";
-                position: absolute;
-                inset: 0;
-                pointer-events: none;
-                opacity: 0.22;
-                background-image:
+                content: ""; /* 设置伪元素生成的内容 */
+                position: absolute; /* 设置元素的定位方式 */
+                inset: 0; /* 同时设置上下左右四个方向的距离 */
+                pointer-events: none; /* 设置元素是否响应鼠标事件 */
+                opacity: 0.22; /* 设置透明度 */
+                background-image: /* 设置背景图片 */
                     linear-gradient(rgba(255, 255, 255, 0.09) 1px, transparent 1px),
                     linear-gradient(90deg, rgba(255, 255, 255, 0.09) 1px, transparent 1px);
-                background-size: 54px 54px;
-                mask-image: linear-gradient(to bottom, transparent, #000 28%, transparent);
+                background-size: 54px 54px; /* 设置背景图片大小 */
+                mask-image: linear-gradient(to bottom, transparent, #000 28%, transparent); /* 设置元素的遮罩效果 */
             }
 
             .hero-inner {
-                position: relative;
-                z-index: 1;
-                display: grid;
-                grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.6fr);
-                align-items: center;
-                gap: 68px;
-                padding-block: 86px 94px;
+                position: relative; /* 设置元素的定位方式 */
+                z-index: 1; /* 设置元素的叠放层级 */
+                display: grid; /* 设置元素的显示方式 */
+                grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.6fr); /* 设置网格的列数和列宽 */
+                align-items: center; /* 设置子元素的垂直对齐 */
+                gap: 68px; /* 设置子元素之间的间距 */
+                padding-block: 86px 94px; /* 设置上下内边距 */
             }
 
             .eyebrow {
-                margin: 0 0 14px;
-                color: #f6e879;
-                font-size: 12px;
-                font-weight: 800;
-                letter-spacing: 0.18em;
-                text-transform: uppercase;
+                margin: 0 0 14px; /* 设置外边距 */
+                color: #f6e879; /* 设置文字颜色 */
+                font-size: 12px; /* 设置文字大小 */
+                font-weight: 800; /* 设置文字粗细 */
+                letter-spacing: 0.18em; /* 设置文字间距 */
+                text-transform: uppercase; /* 设置英文字母大小写 */
             }
 
             .hero h1 {
-                max-width: 760px;
-                margin: 0;
-                font-size: clamp(46px, 7vw, 82px);
-                line-height: 1.05;
-                letter-spacing: -0.055em;
+                max-width: 760px; /* 设置最大宽度 */
+                margin: 0; /* 设置外边距 */
+                font-size: clamp(46px, 7vw, 82px); /* 设置文字大小 */
+                line-height: 1.05; /* 设置行高 */
+                letter-spacing: -0.055em; /* 设置文字间距 */
             }
 
             .hero h1 span {
-                color: #f6e879;
+                color: #f6e879; /* 设置文字颜色 */
             }
 
             .hero-lead {
-                max-width: 690px;
-                margin: 26px 0 0;
-                color: rgba(255, 255, 255, 0.72);
-                font-size: 18px;
-                line-height: 1.85;
+                max-width: 690px; /* 设置最大宽度 */
+                margin: 26px 0 0; /* 设置外边距 */
+                color: rgba(255, 255, 255, 0.72); /* 设置文字颜色 */
+                font-size: 18px; /* 设置文字大小 */
+                line-height: 1.85; /* 设置行高 */
             }
 
             .hero-actions {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 12px;
-                margin-top: 34px;
+                display: flex; /* 设置元素的显示方式 */
+                flex-wrap: wrap; /* 设置弹性子元素是否换行 */
+                gap: 12px; /* 设置子元素之间的间距 */
+                margin-top: 34px; /* 设置上方外边距 */
             }
 
             .button {
-                min-height: 48px;
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                gap: 9px;
-                padding: 0 21px;
-                border: 1px solid transparent;
-                border-radius: 999px;
-                text-decoration: none;
-                font-weight: 700;
-                transition:
+                min-height: 48px; /* 设置最小高度 */
+                display: inline-flex; /* 设置元素的显示方式 */
+                align-items: center; /* 设置子元素的垂直对齐 */
+                justify-content: center; /* 设置子元素的水平对齐 */
+                gap: 9px; /* 设置子元素之间的间距 */
+                padding: 0 21px; /* 设置内边距 */
+                border: 1px solid transparent; /* 设置边框 */
+                border-radius: 999px; /* 设置圆角 */
+                text-decoration: none; /* 设置文字装饰线 */
+                font-weight: 700; /* 设置文字粗细 */
+                transition: /* 设置样式变化时的过渡动画 */
                     transform 0.2s ease,
                     box-shadow 0.2s ease,
                     background 0.2s ease;
             }
 
             .button:hover {
-                transform: translateY(-2px);
+                transform: translateY(-2px); /* 设置旋转、缩放或移动 */
             }
 
             .button-primary {
-                color: var(--navy);
-                background: #f6e879;
-                box-shadow: 0 10px 30px rgba(246, 232, 121, 0.16);
+                color: var(--navy); /* 设置文字颜色 */
+                background: #f6e879; /* 设置背景颜色或背景图 */
+                box-shadow: 0 10px 30px rgba(246, 232, 121, 0.16); /* 设置盒子的阴影 */
             }
 
             .button-primary:hover {
-                box-shadow: 0 14px 36px rgba(246, 232, 121, 0.26);
+                box-shadow: 0 14px 36px rgba(246, 232, 121, 0.26); /* 设置盒子的阴影 */
             }
 
             .button-ghost {
-                color: #fff;
-                background: rgba(255, 255, 255, 0.06);
-                border-color: rgba(255, 255, 255, 0.2);
+                color: #fff; /* 设置文字颜色 */
+                background: rgba(255, 255, 255, 0.06); /* 设置背景颜色或背景图 */
+                border-color: rgba(255, 255, 255, 0.2); /* 设置边框颜色 */
             }
 
             .button-ghost:hover {
-                background: rgba(255, 255, 255, 0.12);
+                background: rgba(255, 255, 255, 0.12); /* 设置背景颜色或背景图 */
             }
 
             .hero-note {
-                position: relative;
-                padding: 28px;
-                border: 1px solid rgba(255, 255, 255, 0.14);
-                border-radius: var(--radius-lg);
-                background: rgba(255, 255, 255, 0.07);
-                box-shadow: 0 26px 70px rgba(0, 0, 0, 0.2);
-                backdrop-filter: blur(16px);
+                position: relative; /* 设置元素的定位方式 */
+                padding: 28px; /* 设置内边距 */
+                border: 1px solid rgba(255, 255, 255, 0.14); /* 设置边框 */
+                border-radius: var(--radius-lg); /* 设置圆角 */
+                background: rgba(255, 255, 255, 0.07); /* 设置背景颜色或背景图 */
+                box-shadow: 0 26px 70px rgba(0, 0, 0, 0.2); /* 设置盒子的阴影 */
+                backdrop-filter: blur(16px); /* 设置元素背后的模糊效果 */
             }
 
             .hero-note::before {
-                content: "“";
-                position: absolute;
-                top: 6px;
-                right: 22px;
-                color: rgba(246, 232, 121, 0.25);
-                font-family: Georgia, serif;
-                font-size: 82px;
-                line-height: 1;
+                content: "“"; /* 设置伪元素生成的内容 */
+                position: absolute; /* 设置元素的定位方式 */
+                top: 6px; /* 设置距顶部的距离 */
+                right: 22px; /* 设置距右侧的距离 */
+                color: rgba(246, 232, 121, 0.25); /* 设置文字颜色 */
+                font-family: Georgia, serif; /* 设置使用的字体 */
+                font-size: 82px; /* 设置文字大小 */
+                line-height: 1; /* 设置行高 */
             }
 
             .hero-note p {
-                position: relative;
-                margin: 0;
-                color: rgba(255, 255, 255, 0.8);
-                font-size: 15px;
+                position: relative; /* 设置元素的定位方式 */
+                margin: 0; /* 设置外边距 */
+                color: rgba(255, 255, 255, 0.8); /* 设置文字颜色 */
+                font-size: 15px; /* 设置文字大小 */
             }
 
             .hero-note strong {
-                display: block;
-                margin-bottom: 12px;
-                color: #fff;
-                font-size: 20px;
+                display: block; /* 设置元素的显示方式 */
+                margin-bottom: 12px; /* 设置下方外边距 */
+                color: #fff; /* 设置文字颜色 */
+                font-size: 20px; /* 设置文字大小 */
             }
 
             .hero-tags {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 9px;
-                margin-top: 24px;
+                display: flex; /* 设置元素的显示方式 */
+                flex-wrap: wrap; /* 设置弹性子元素是否换行 */
+                gap: 9px; /* 设置子元素之间的间距 */
+                margin-top: 24px; /* 设置上方外边距 */
             }
 
             .hero-tags span {
-                padding: 7px 12px;
-                color: rgba(255, 255, 255, 0.72);
-                border: 1px solid rgba(255, 255, 255, 0.13);
-                border-radius: 999px;
-                font-size: 12px;
+                padding: 7px 12px; /* 设置内边距 */
+                color: rgba(255, 255, 255, 0.72); /* 设置文字颜色 */
+                border: 1px solid rgba(255, 255, 255, 0.13); /* 设置边框 */
+                border-radius: 999px; /* 设置圆角 */
+                font-size: 12px; /* 设置文字大小 */
             }
 
             .section {
-                padding-block: 92px;
+                padding-block: 92px; /* 设置上下内边距 */
             }
 
             .section-soft {
-                background: #eef2f7;
+                background: #eef2f7; /* 设置背景颜色或背景图 */
             }
 
             .section-warm {
-                background: #fbf8f2;
+                background: #fbf8f2; /* 设置背景颜色或背景图 */
             }
 
             .section-heading {
-                max-width: 720px;
-                margin-bottom: 42px;
+                max-width: 720px; /* 设置最大宽度 */
+                margin-bottom: 42px; /* 设置下方外边距 */
             }
 
             .section-heading.center {
-                margin-inline: auto;
-                text-align: center;
+                margin-inline: auto; /* 设置左右外边距 */
+                text-align: center; /* 设置文字对齐方式 */
             }
 
             .section-heading h2 {
-                margin: 0;
-                font-size: clamp(32px, 5vw, 48px);
-                line-height: 1.2;
-                letter-spacing: -0.035em;
+                margin: 0; /* 设置外边距 */
+                font-size: clamp(32px, 5vw, 48px); /* 设置文字大小 */
+                line-height: 1.2; /* 设置行高 */
+                letter-spacing: -0.035em; /* 设置文字间距 */
             }
 
             .section-heading p {
-                margin: 14px 0 0;
-                color: var(--muted);
+                margin: 14px 0 0; /* 设置外边距 */
+                color: var(--muted); /* 设置文字颜色 */
             }
 
             .title-rule {
-                width: 52px;
-                height: 4px;
-                margin: 22px 0 0;
-                border-radius: 999px;
-                background: var(--blue);
+                width: 52px; /* 设置元素宽度 */
+                height: 4px; /* 设置元素高度 */
+                margin: 22px 0 0; /* 设置外边距 */
+                border-radius: 999px; /* 设置圆角 */
+                background: var(--blue); /* 设置背景颜色或背景图 */
             }
 
             .center .title-rule {
-                margin-inline: auto;
+                margin-inline: auto; /* 设置左右外边距 */
             }
 
             .about-grid {
-                display: grid;
-                grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
-                gap: 50px;
-                align-items: start;
+                display: grid; /* 设置元素的显示方式 */
+                grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr); /* 设置网格的列数和列宽 */
+                gap: 50px; /* 设置子元素之间的间距 */
+                align-items: start; /* 设置子元素的垂直对齐 */
             }
 
             .about-copy {
-                margin: 0;
-                font-size: 17px;
-                line-height: 2;
+                margin: 0; /* 设置外边距 */
+                font-size: 17px; /* 设置文字大小 */
+                line-height: 2; /* 设置行高 */
             }
 
             .about-copy strong {
-                color: var(--blue);
+                color: var(--blue); /* 设置文字颜色 */
             }
 
             .about-facts {
-                display: grid;
-                gap: 12px;
+                display: grid; /* 设置元素的显示方式 */
+                gap: 12px; /* 设置子元素之间的间距 */
             }
 
             .fact {
-                display: flex;
-                align-items: center;
-                gap: 15px;
-                padding: 18px 20px;
-                background: #f7f9fc;
-                border: 1px solid #e8edf3;
-                border-radius: 16px;
+                display: flex; /* 设置元素的显示方式 */
+                align-items: center; /* 设置子元素的垂直对齐 */
+                gap: 15px; /* 设置子元素之间的间距 */
+                padding: 18px 20px; /* 设置内边距 */
+                background: #f7f9fc; /* 设置背景颜色或背景图 */
+                border: 1px solid #e8edf3; /* 设置边框 */
+                border-radius: 16px; /* 设置圆角 */
             }
 
             .fact-index {
-                width: 38px;
-                height: 38px;
-                display: grid;
-                place-items: center;
-                flex: 0 0 auto;
-                color: var(--blue);
-                background: var(--blue-soft);
-                border-radius: 12px;
-                font-size: 12px;
-                font-weight: 800;
+                width: 38px; /* 设置元素宽度 */
+                height: 38px; /* 设置元素高度 */
+                display: grid; /* 设置元素的显示方式 */
+                place-items: center; /* 同时设置网格内容的水平和垂直对齐 */
+                flex: 0 0 auto; /* 设置弹性子元素的放大、缩小和基础宽度 */
+                color: var(--blue); /* 设置文字颜色 */
+                background: var(--blue-soft); /* 设置背景颜色或背景图 */
+                border-radius: 12px; /* 设置圆角 */
+                font-size: 12px; /* 设置文字大小 */
+                font-weight: 800; /* 设置文字粗细 */
             }
 
             .fact strong,
             .fact span {
-                display: block;
+                display: block; /* 设置元素的显示方式 */
             }
 
             .fact strong {
-                font-size: 15px;
+                font-size: 15px; /* 设置文字大小 */
             }
 
             .fact span {
-                margin-top: 2px;
-                color: var(--muted);
-                font-size: 13px;
+                margin-top: 2px; /* 设置上方外边距 */
+                color: var(--muted); /* 设置文字颜色 */
+                font-size: 13px; /* 设置文字大小 */
             }
 
             .skills-grid {
-                display: grid;
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-                gap: 16px;
+                display: grid; /* 设置元素的显示方式 */
+                grid-template-columns: repeat(2, minmax(0, 1fr)); /* 设置网格的列数和列宽 */
+                gap: 16px; /* 设置子元素之间的间距 */
             }
 
             .skill-card {
-                padding: 24px;
-                background: #fff;
-                border: 1px solid rgba(21, 41, 61, 0.07);
-                border-radius: 20px;
-                box-shadow: 0 10px 30px rgba(21, 41, 61, 0.045);
+                padding: 24px; /* 设置内边距 */
+                background: #fff; /* 设置背景颜色或背景图 */
+                border: 1px solid rgba(21, 41, 61, 0.07); /* 设置边框 */
+                border-radius: 20px; /* 设置圆角 */
+                box-shadow: 0 10px 30px rgba(21, 41, 61, 0.045); /* 设置盒子的阴影 */
             }
 
             .skill-head {
-                display: flex;
-                align-items: baseline;
-                justify-content: space-between;
-                gap: 16px;
-                margin-bottom: 16px;
+                display: flex; /* 设置元素的显示方式 */
+                align-items: baseline; /* 设置子元素的垂直对齐 */
+                justify-content: space-between; /* 设置子元素的水平对齐 */
+                gap: 16px; /* 设置子元素之间的间距 */
+                margin-bottom: 16px; /* 设置下方外边距 */
             }
 
             .skill-head h3 {
-                margin: 0;
-                font-size: 18px;
+                margin: 0; /* 设置外边距 */
+                font-size: 18px; /* 设置文字大小 */
             }
 
             .skill-value {
-                color: var(--blue);
-                font-size: 13px;
-                font-weight: 800;
+                color: var(--blue); /* 设置文字颜色 */
+                font-size: 13px; /* 设置文字大小 */
+                font-weight: 800; /* 设置文字粗细 */
             }
 
             .skill-track {
-                height: 10px;
-                overflow: hidden;
-                background: #dfe5ec;
-                border-radius: 999px;
+                height: 10px; /* 设置元素高度 */
+                overflow: hidden; /* 设置内容超出元素后的处理方式 */
+                background: #dfe5ec; /* 设置背景颜色或背景图 */
+                border-radius: 999px; /* 设置圆角 */
             }
 
             .skill-fill {
-                width: 0;
-                height: 100%;
-                border-radius: inherit;
-                background: linear-gradient(90deg, #4677e8, #7ba5ff);
+                width: 0; /* 设置元素宽度 */
+                height: 100%; /* 设置元素高度 */
+                border-radius: inherit; /* 设置圆角 */
+                background: linear-gradient(90deg, #4677e8, #7ba5ff); /* 设置背景颜色或背景图 */
             }
 
             .skill-note {
-                margin: 13px 0 0;
-                color: var(--muted);
-                font-size: 13px;
+                margin: 13px 0 0; /* 设置外边距 */
+                color: var(--muted); /* 设置文字颜色 */
+                font-size: 13px; /* 设置文字大小 */
             }
 
             .friends-grid {
-                display: grid;
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-                gap: 18px;
+                display: grid; /* 设置元素的显示方式 */
+                grid-template-columns: repeat(2, minmax(0, 1fr)); /* 设置网格的列数和列宽 */
+                gap: 18px; /* 设置子元素之间的间距 */
             }
 
             .photo-card {
-                position: relative;
-                min-height: 230px;
-                display: block;
-                width: 100%;
-                padding: 27px;
-                overflow: hidden;
-                color: var(--ink);
-                text-align: left;
-                background: var(--card-color, #e5eef7);
-                border: 0;
-                border-radius: 22px;
-                cursor: pointer;
-                box-shadow: 0 8px 22px rgba(15, 35, 58, 0.05);
-                transition:
+                position: relative; /* 设置元素的定位方式 */
+                min-height: 230px; /* 设置最小高度 */
+                display: block; /* 设置元素的显示方式 */
+                width: 100%; /* 设置元素宽度 */
+                padding: 27px; /* 设置内边距 */
+                overflow: hidden; /* 设置内容超出元素后的处理方式 */
+                color: var(--ink); /* 设置文字颜色 */
+                text-align: left; /* 设置文字对齐方式 */
+                background: var(--card-color, #e5eef7); /* 设置背景颜色或背景图 */
+                border: 0; /* 设置边框 */
+                border-radius: 22px; /* 设置圆角 */
+                cursor: pointer; /* 设置鼠标形状 */
+                box-shadow: 0 8px 22px rgba(15, 35, 58, 0.05); /* 设置盒子的阴影 */
+                transition: /* 设置样式变化时的过渡动画 */
                     transform 0.25s ease,
                     box-shadow 0.25s ease;
             }
 
             .photo-card:hover {
-                transform: translateY(-3px);
-                box-shadow: 0 17px 34px rgba(15, 35, 58, 0.12);
+                transform: translateY(-3px); /* 设置旋转、缩放或移动 */
+                box-shadow: 0 17px 34px rgba(15, 35, 58, 0.12); /* 设置盒子的阴影 */
             }
 
             .photo-card:focus-visible {
-                outline: 3px solid var(--navy);
-                outline-offset: 4px;
+                outline: 3px solid var(--navy); /* 设置键盘聚焦时的外框 */
+                outline-offset: 4px; /* 设置外框与元素之间的距离 */
             }
 
             .friend-photo,
             .photo-card > img {
-                position: absolute;
-                inset: 0;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                opacity: 0;
-                transform: scale(1.03);
-                transition:
+                position: absolute; /* 设置元素的定位方式 */
+                inset: 0; /* 同时设置上下左右四个方向的距离 */
+                width: 100%; /* 设置元素宽度 */
+                height: 100%; /* 设置元素高度 */
+                object-fit: cover; /* 设置图片如何填充容器 */
+                opacity: 0; /* 设置透明度 */
+                transform: scale(1.03); /* 设置旋转、缩放或移动 */
+                transition: /* 设置样式变化时的过渡动画 */
                     opacity 0.35s ease,
                     transform 0.55s ease;
             }
 
             .photo-overlay {
-                position: absolute;
-                inset: 0;
-                opacity: 0;
-                background: linear-gradient(
+                position: absolute; /* 设置元素的定位方式 */
+                inset: 0; /* 同时设置上下左右四个方向的距离 */
+                opacity: 0; /* 设置透明度 */
+                background: linear-gradient( /* 设置背景颜色或背景图 */
                     120deg,
                     rgba(6, 20, 36, 0.18),
                     rgba(6, 20, 36, 0.75)
                 );
-                transition: opacity 0.35s ease;
+                transition: opacity 0.35s ease; /* 设置样式变化时的过渡动画 */
             }
 
             .card-content {
-                position: relative;
-                z-index: 2;
-                display: flex;
-                flex-direction: column;
-                min-height: 176px;
+                position: relative; /* 设置元素的定位方式 */
+                z-index: 2; /* 设置元素的叠放层级 */
+                display: flex; /* 设置元素的显示方式 */
+                flex-direction: column; /* 设置弹性子元素的排列方向 */
+                min-height: 176px; /* 设置最小高度 */
             }
 
             .card-index {
-                color: rgba(16, 35, 58, 0.5);
-                font-size: 12px;
-                font-weight: 900;
-                letter-spacing: 0.15em;
+                color: rgba(16, 35, 58, 0.5); /* 设置文字颜色 */
+                font-size: 12px; /* 设置文字大小 */
+                font-weight: 900; /* 设置文字粗细 */
+                letter-spacing: 0.15em; /* 设置文字间距 */
             }
 
             .card-title {
-                display: block;
-                margin: 32px 0 11px;
-                font-size: 22px;
-                font-weight: 800;
-                line-height: 1.3;
+                display: block; /* 设置元素的显示方式 */
+                margin: 32px 0 11px; /* 设置外边距 */
+                font-size: 22px; /* 设置文字大小 */
+                font-weight: 800; /* 设置文字粗细 */
+                line-height: 1.3; /* 设置行高 */
             }
 
             .card-description {
-                display: block;
-                max-width: 92%;
-                margin: 0;
-                color: rgba(16, 35, 58, 0.76);
-                font-size: 14px;
-                line-height: 1.8;
+                display: block; /* 设置元素的显示方式 */
+                max-width: 92%; /* 设置最大宽度 */
+                margin: 0; /* 设置外边距 */
+                color: rgba(16, 35, 58, 0.76); /* 设置文字颜色 */
+                font-size: 14px; /* 设置文字大小 */
+                line-height: 1.8; /* 设置行高 */
             }
 
             .photo-hint {
-                position: absolute;
-                right: 20px;
-                bottom: 19px;
-                z-index: 3;
-                padding: 7px 12px;
-                color: var(--ink);
-                background: rgba(255, 255, 255, 0.64);
-                border-radius: 999px;
-                font-size: 12px;
-                font-weight: 700;
-                backdrop-filter: blur(8px);
+                position: absolute; /* 设置元素的定位方式 */
+                right: 20px; /* 设置距右侧的距离 */
+                bottom: 19px; /* 设置距底部的距离 */
+                z-index: 3; /* 设置元素的叠放层级 */
+                padding: 7px 12px; /* 设置内边距 */
+                color: var(--ink); /* 设置文字颜色 */
+                background: rgba(255, 255, 255, 0.64); /* 设置背景颜色或背景图 */
+                border-radius: 999px; /* 设置圆角 */
+                font-size: 12px; /* 设置文字大小 */
+                font-weight: 700; /* 设置文字粗细 */
+                backdrop-filter: blur(8px); /* 设置元素背后的模糊效果 */
             }
 
             .photo-card.is-open .friend-photo,
             .photo-card.is-open > img {
-                opacity: 1;
-                transform: scale(1);
+                opacity: 1; /* 设置透明度 */
+                transform: scale(1); /* 设置旋转、缩放或移动 */
             }
 
             .photo-card.is-open .photo-overlay {
-                opacity: 1;
+                opacity: 1; /* 设置透明度 */
             }
 
             .photo-card.is-open .card-index,
             .photo-card.is-open .card-title,
             .photo-card.is-open .card-description {
-                color: #fff;
-                text-shadow: 0 1px 10px rgba(0, 0, 0, 0.7);
+                color: #fff; /* 设置文字颜色 */
+                text-shadow: 0 1px 10px rgba(0, 0, 0, 0.7); /* 设置文字阴影 */
             }
 
             .portfolio-card {
-                display: grid;
-                grid-template-columns: minmax(260px, 0.78fr) minmax(0, 1.22fr);
-                overflow: hidden;
-                color: var(--ink);
-                background: #fff;
-                border: 1px solid #e7e2d9;
-                border-radius: var(--radius-lg);
-                box-shadow: var(--shadow);
-                text-decoration: none;
-                transition:
+                display: grid; /* 设置元素的显示方式 */
+                grid-template-columns: minmax(260px, 0.78fr) minmax(0, 1.22fr); /* 设置网格的列数和列宽 */
+                overflow: hidden; /* 设置内容超出元素后的处理方式 */
+                color: var(--ink); /* 设置文字颜色 */
+                background: #fff; /* 设置背景颜色或背景图 */
+                border: 1px solid #e7e2d9; /* 设置边框 */
+                border-radius: var(--radius-lg); /* 设置圆角 */
+                box-shadow: var(--shadow); /* 设置盒子的阴影 */
+                text-decoration: none; /* 设置文字装饰线 */
+                transition: /* 设置样式变化时的过渡动画 */
                     transform 0.25s ease,
                     box-shadow 0.25s ease;
             }
 
             .portfolio-card:hover {
-                transform: translateY(-4px);
-                box-shadow: 0 24px 60px rgba(15, 35, 58, 0.16);
+                transform: translateY(-4px); /* 设置旋转、缩放或移动 */
+                box-shadow: 0 24px 60px rgba(15, 35, 58, 0.16); /* 设置盒子的阴影 */
             }
 
             .portfolio-card:focus-visible {
-                outline: 3px solid var(--blue);
-                outline-offset: 4px;
+                outline: 3px solid var(--blue); /* 设置键盘聚焦时的外框 */
+                outline-offset: 4px; /* 设置外框与元素之间的距离 */
             }
 
             .portfolio-image {
-                min-height: 300px;
-                overflow: hidden;
-                background: #f7e9eb;
+                min-height: 300px; /* 设置最小高度 */
+                overflow: hidden; /* 设置内容超出元素后的处理方式 */
+                background: #f7e9eb; /* 设置背景颜色或背景图 */
             }
 
             .portfolio-image img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                transition: transform 0.55s ease;
+                width: 100%; /* 设置元素宽度 */
+                height: 100%; /* 设置元素高度 */
+                object-fit: cover; /* 设置图片如何填充容器 */
+                transition: transform 0.55s ease; /* 设置样式变化时的过渡动画 */
             }
 
             .portfolio-card:hover .portfolio-image img {
-                transform: scale(1.035);
+                transform: scale(1.035); /* 设置旋转、缩放或移动 */
             }
 
             .portfolio-copy {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                padding: 48px;
+                display: flex; /* 设置元素的显示方式 */
+                flex-direction: column; /* 设置弹性子元素的排列方向 */
+                justify-content: center; /* 设置子元素的水平对齐 */
+                padding: 48px; /* 设置内边距 */
             }
 
             .portfolio-label {
-                color: var(--blue);
-                font-size: 12px;
-                font-weight: 800;
-                letter-spacing: 0.15em;
-                text-transform: uppercase;
+                color: var(--blue); /* 设置文字颜色 */
+                font-size: 12px; /* 设置文字大小 */
+                font-weight: 800; /* 设置文字粗细 */
+                letter-spacing: 0.15em; /* 设置文字间距 */
+                text-transform: uppercase; /* 设置英文字母大小写 */
             }
 
             .portfolio-title {
-                display: block;
-                margin: 13px 0 14px;
-                font-size: clamp(28px, 4vw, 42px);
-                font-weight: 800;
-                line-height: 1.2;
-                letter-spacing: -0.04em;
+                display: block; /* 设置元素的显示方式 */
+                margin: 13px 0 14px; /* 设置外边距 */
+                font-size: clamp(28px, 4vw, 42px); /* 设置文字大小 */
+                font-weight: 800; /* 设置文字粗细 */
+                line-height: 1.2; /* 设置行高 */
+                letter-spacing: -0.04em; /* 设置文字间距 */
             }
 
             .portfolio-description {
-                display: block;
-                margin: 0;
-                color: var(--muted);
+                display: block; /* 设置元素的显示方式 */
+                margin: 0; /* 设置外边距 */
+                color: var(--muted); /* 设置文字颜色 */
             }
 
             .text-link {
-                display: inline-flex;
-                align-items: center;
-                gap: 9px;
-                margin-top: 27px;
-                color: var(--blue);
-                font-weight: 800;
+                display: inline-flex; /* 设置元素的显示方式 */
+                align-items: center; /* 设置子元素的垂直对齐 */
+                gap: 9px; /* 设置子元素之间的间距 */
+                margin-top: 27px; /* 设置上方外边距 */
+                color: var(--blue); /* 设置文字颜色 */
+                font-weight: 800; /* 设置文字粗细 */
             }
 
             .like-stage {
-                display: grid;
-                grid-template-columns: 180px minmax(0, 1fr) 180px;
-                align-items: center;
-                gap: 22px;
+                display: grid; /* 设置元素的显示方式 */
+                grid-template-columns: 180px minmax(0, 1fr) 180px; /* 设置网格的列数和列宽 */
+                align-items: center; /* 设置子元素的垂直对齐 */
+                gap: 22px; /* 设置子元素之间的间距 */
             }
 
             .memory-side {
-                position: relative;
-                height: 290px;
-                overflow: hidden;
-                border-radius: 22px;
-                box-shadow: 0 15px 38px rgba(44, 42, 41, 0.13);
+                position: relative; /* 设置元素的定位方式 */
+                height: 290px; /* 设置元素高度 */
+                overflow: hidden; /* 设置内容超出元素后的处理方式 */
+                border-radius: 22px; /* 设置圆角 */
+                box-shadow: 0 15px 38px rgba(44, 42, 41, 0.13); /* 设置盒子的阴影 */
             }
 
             .memory-side::after {
-                content: "";
-                position: absolute;
-                inset: 0;
-                background: linear-gradient(to top, rgba(9, 23, 39, 0.25), transparent 45%);
+                content: ""; /* 设置伪元素生成的内容 */
+                position: absolute; /* 设置元素的定位方式 */
+                inset: 0; /* 同时设置上下左右四个方向的距离 */
+                background: linear-gradient(to top, rgba(9, 23, 39, 0.25), transparent 45%); /* 设置背景颜色或背景图 */
             }
 
             .memory-side img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                transition: transform 0.6s ease;
+                width: 100%; /* 设置元素宽度 */
+                height: 100%; /* 设置元素高度 */
+                object-fit: cover; /* 设置图片如何填充容器 */
+                transition: transform 0.6s ease; /* 设置样式变化时的过渡动画 */
             }
 
             .memory-side:hover img {
-                transform: scale(1.035);
+                transform: scale(1.035); /* 设置旋转、缩放或移动 */
             }
 
             .like-card {
-                --card-color: #83cff8;
-                min-height: 290px;
-                padding: 34px;
+                --card-color: #83cff8; /* 设置当前卡片的背景颜色 */
+                min-height: 290px; /* 设置最小高度 */
+                padding: 34px; /* 设置内边距 */
             }
 
             .like-card .card-content {
-                min-height: 220px;
-                justify-content: center;
+                min-height: 220px; /* 设置最小高度 */
+                justify-content: center; /* 设置子元素的水平对齐 */
             }
 
             .like-card .card-title {
-                margin-top: 0;
+                margin-top: 0; /* 设置上方外边距 */
             }
 
             .like-card .card-description {
-                max-width: 100%;
-                line-height: 1.9;
+                max-width: 100%; /* 设置最大宽度 */
+                line-height: 1.9; /* 设置行高 */
             }
 
             .contact-grid {
-                display: grid;
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-                gap: 16px;
+                display: grid; /* 设置元素的显示方式 */
+                grid-template-columns: repeat(2, minmax(0, 1fr)); /* 设置网格的列数和列宽 */
+                gap: 16px; /* 设置子元素之间的间距 */
             }
 
             .contact-card {
-                display: flex;
-                align-items: center;
-                gap: 18px;
-                padding: 24px;
-                background: #fff;
-                border: 1px solid #e4eaf0;
-                border-radius: 20px;
-                text-decoration: none;
-                transition:
+                display: flex; /* 设置元素的显示方式 */
+                align-items: center; /* 设置子元素的垂直对齐 */
+                gap: 18px; /* 设置子元素之间的间距 */
+                padding: 24px; /* 设置内边距 */
+                background: #fff; /* 设置背景颜色或背景图 */
+                border: 1px solid #e4eaf0; /* 设置边框 */
+                border-radius: 20px; /* 设置圆角 */
+                text-decoration: none; /* 设置文字装饰线 */
+                transition: /* 设置样式变化时的过渡动画 */
                     transform 0.2s ease,
                     border-color 0.2s ease;
             }
 
             .contact-card:hover {
-                transform: translateY(-2px);
-                border-color: #b8c9dc;
+                transform: translateY(-2px); /* 设置旋转、缩放或移动 */
+                border-color: #b8c9dc; /* 设置边框颜色 */
             }
 
             .contact-icon {
-                width: 46px;
-                height: 46px;
-                display: grid;
-                place-items: center;
-                flex: 0 0 auto;
-                color: var(--blue);
-                background: #edf3ff;
-                border-radius: 14px;
-                font-weight: 900;
+                width: 46px; /* 设置元素宽度 */
+                height: 46px; /* 设置元素高度 */
+                display: grid; /* 设置元素的显示方式 */
+                place-items: center; /* 同时设置网格内容的水平和垂直对齐 */
+                flex: 0 0 auto; /* 设置弹性子元素的放大、缩小和基础宽度 */
+                color: var(--blue); /* 设置文字颜色 */
+                background: #edf3ff; /* 设置背景颜色或背景图 */
+                border-radius: 14px; /* 设置圆角 */
+                font-weight: 900; /* 设置文字粗细 */
             }
 
             .contact-card small,
             .contact-card strong {
-                display: block;
+                display: block; /* 设置元素的显示方式 */
             }
 
             .contact-card small {
-                color: var(--muted);
-                font-size: 12px;
+                color: var(--muted); /* 设置文字颜色 */
+                font-size: 12px; /* 设置文字大小 */
             }
 
             .contact-card strong {
-                margin-top: 3px;
-                overflow-wrap: anywhere;
+                margin-top: 3px; /* 设置上方外边距 */
+                overflow-wrap: anywhere; /* 设置长文字如何换行 */
             }
 
             .contact-note {
-                margin: 24px 0 0;
-                color: var(--muted);
-                font-size: 14px;
+                margin: 24px 0 0; /* 设置外边距 */
+                color: var(--muted); /* 设置文字颜色 */
+                font-size: 14px; /* 设置文字大小 */
             }
 
             .site-footer {
-                padding-block: 36px;
-                color: rgba(255, 255, 255, 0.66);
-                background: var(--navy);
+                padding-block: 36px; /* 设置上下内边距 */
+                color: rgba(255, 255, 255, 0.66); /* 设置文字颜色 */
+                background: var(--navy); /* 设置背景颜色或背景图 */
             }
 
             .footer-inner {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                gap: 24px;
+                display: flex; /* 设置元素的显示方式 */
+                align-items: center; /* 设置子元素的垂直对齐 */
+                justify-content: space-between; /* 设置子元素的水平对齐 */
+                gap: 24px; /* 设置子元素之间的间距 */
             }
 
             .site-footer p {
-                margin: 0;
-                font-size: 13px;
+                margin: 0; /* 设置外边距 */
+                font-size: 13px; /* 设置文字大小 */
             }
 
             .footer-motto {
-                color: #f7b4ca;
-                font-weight: 700;
+                color: #f7b4ca; /* 设置文字颜色 */
+                font-weight: 700; /* 设置文字粗细 */
             }
 
             .to-top {
-                position: fixed;
-                right: 22px;
-                bottom: 22px;
-                z-index: 40;
-                width: 46px;
-                height: 46px;
-                display: grid;
-                place-items: center;
-                color: #fff;
-                background: var(--navy-soft);
-                border: 0;
-                border-radius: 15px;
-                box-shadow: 0 12px 30px rgba(15, 35, 58, 0.22);
-                cursor: pointer;
-                opacity: 0;
-                pointer-events: none;
-                transform: translateY(12px);
-                transition:
+                position: fixed; /* 设置元素的定位方式 */
+                right: 22px; /* 设置距右侧的距离 */
+                bottom: 22px; /* 设置距底部的距离 */
+                z-index: 40; /* 设置元素的叠放层级 */
+                width: 46px; /* 设置元素宽度 */
+                height: 46px; /* 设置元素高度 */
+                display: grid; /* 设置元素的显示方式 */
+                place-items: center; /* 同时设置网格内容的水平和垂直对齐 */
+                color: #fff; /* 设置文字颜色 */
+                background: var(--navy-soft); /* 设置背景颜色或背景图 */
+                border: 0; /* 设置边框 */
+                border-radius: 15px; /* 设置圆角 */
+                box-shadow: 0 12px 30px rgba(15, 35, 58, 0.22); /* 设置盒子的阴影 */
+                cursor: pointer; /* 设置鼠标形状 */
+                opacity: 0; /* 设置透明度 */
+                pointer-events: none; /* 设置元素是否响应鼠标事件 */
+                transform: translateY(12px); /* 设置旋转、缩放或移动 */
+                transition: /* 设置样式变化时的过渡动画 */
                     opacity 0.25s ease,
                     transform 0.25s ease,
                     background 0.2s ease;
             }
 
             .to-top.is-visible {
-                opacity: 1;
-                pointer-events: auto;
-                transform: translateY(0);
+                opacity: 1; /* 设置透明度 */
+                pointer-events: auto; /* 设置元素是否响应鼠标事件 */
+                transform: translateY(0); /* 设置旋转、缩放或移动 */
             }
 
             .to-top:hover {
-                background: var(--blue);
+                background: var(--blue); /* 设置背景颜色或背景图 */
             }
 
             .to-top:focus-visible {
-                outline: 3px solid #f6e879;
-                outline-offset: 3px;
+                outline: 3px solid #f6e879; /* 设置键盘聚焦时的外框 */
+                outline-offset: 3px; /* 设置外框与元素之间的距离 */
             }
 
             [data-reveal] {
-                opacity: 0;
-                transform: translateY(22px);
-                transition:
+                opacity: 0; /* 设置透明度 */
+                transform: translateY(22px); /* 设置旋转、缩放或移动 */
+                transition: /* 设置样式变化时的过渡动画 */
                     opacity 0.65s ease,
                     transform 0.65s ease;
             }
 
             [data-reveal].is-visible {
-                opacity: 1;
-                transform: none;
+                opacity: 1; /* 设置透明度 */
+                transform: none; /* 设置旋转、缩放或移动 */
             }
 
             @media (max-width: 900px) {
                 .hero-inner {
-                    grid-template-columns: 1fr;
-                    gap: 34px;
+                    grid-template-columns: 1fr; /* 设置网格的列数和列宽 */
+                    gap: 34px; /* 设置子元素之间的间距 */
                 }
 
                 .hero-note {
-                    max-width: 620px;
+                    max-width: 620px; /* 设置最大宽度 */
                 }
 
                 .about-grid {
-                    grid-template-columns: 1fr;
-                    gap: 32px;
+                    grid-template-columns: 1fr; /* 设置网格的列数和列宽 */
+                    gap: 32px; /* 设置子元素之间的间距 */
                 }
 
                 .like-stage {
-                    grid-template-columns: 150px minmax(0, 1fr) 150px;
-                    gap: 14px;
+                    grid-template-columns: 150px minmax(0, 1fr) 150px; /* 设置网格的列数和列宽 */
+                    gap: 14px; /* 设置子元素之间的间距 */
                 }
 
                 .memory-side {
-                    height: 260px;
+                    height: 260px; /* 设置元素高度 */
                 }
             }
 
             @media (max-width: 760px) {
                 html {
-                    scroll-padding-top: 120px;
+                    scroll-padding-top: 120px; /* 滚动定位时给顶部导航留出空间 */
                 }
 
                 .shell {
-                    width: min(100% - 32px, var(--content));
+                    width: min(100% - 32px, var(--content)); /* 设置元素宽度 */
                 }
 
                 .site-nav {
-                    min-height: 0;
-                    align-items: flex-start;
-                    flex-direction: column;
-                    gap: 12px;
-                    padding-block: 14px 10px;
+                    min-height: 0; /* 设置最小高度 */
+                    align-items: flex-start; /* 设置子元素的垂直对齐 */
+                    flex-direction: column; /* 设置弹性子元素的排列方向 */
+                    gap: 12px; /* 设置子元素之间的间距 */
+                    padding-block: 14px 10px; /* 设置上下内边距 */
                 }
 
                 .brand-copy small {
-                    display: none;
+                    display: none; /* 设置元素的显示方式 */
                 }
 
                 .nav-links {
-                    width: 100%;
-                    gap: 4px;
-                    padding-bottom: 2px;
+                    width: 100%; /* 设置元素宽度 */
+                    gap: 4px; /* 设置子元素之间的间距 */
+                    padding-bottom: 2px; /* 设置下方内边距 */
                 }
 
                 .nav-links a {
-                    padding: 7px 10px;
-                    font-size: 13px;
+                    padding: 7px 10px; /* 设置内边距 */
+                    font-size: 13px; /* 设置文字大小 */
                 }
 
                 .hero {
-                    min-height: auto;
+                    min-height: auto; /* 设置最小高度 */
                 }
 
                 .hero-inner {
-                    padding-block: 64px 70px;
+                    padding-block: 64px 70px; /* 设置上下内边距 */
                 }
 
                 .hero h1 {
-                    font-size: clamp(42px, 14vw, 64px);
+                    font-size: clamp(42px, 14vw, 64px); /* 设置文字大小 */
                 }
 
                 .hero-lead {
-                    font-size: 16px;
-                    line-height: 1.8;
+                    font-size: 16px; /* 设置文字大小 */
+                    line-height: 1.8; /* 设置行高 */
                 }
 
                 .hero-note {
-                    padding: 23px;
+                    padding: 23px; /* 设置内边距 */
                 }
 
                 .section {
-                    padding-block: 70px;
+                    padding-block: 70px; /* 设置上下内边距 */
                 }
 
                 .section-heading {
-                    margin-bottom: 30px;
+                    margin-bottom: 30px; /* 设置下方外边距 */
                 }
 
                 .skills-grid,
                 .friends-grid,
                 .contact-grid {
-                    grid-template-columns: 1fr;
+                    grid-template-columns: 1fr; /* 设置网格的列数和列宽 */
                 }
 
                 .portfolio-card {
-                    grid-template-columns: 1fr;
+                    grid-template-columns: 1fr; /* 设置网格的列数和列宽 */
                 }
 
                 .portfolio-image {
-                    min-height: 230px;
+                    min-height: 230px; /* 设置最小高度 */
                 }
 
                 .portfolio-copy {
-                    padding: 30px 24px 34px;
+                    padding: 30px 24px 34px; /* 设置内边距 */
                 }
 
                 .like-stage {
-                    grid-template-columns: repeat(2, minmax(0, 1fr));
+                    grid-template-columns: repeat(2, minmax(0, 1fr)); /* 设置网格的列数和列宽 */
                 }
 
                 .like-card {
-                    grid-column: 1 / -1;
-                    grid-row: 1;
+                    grid-column: 1 / -1; /* 设置元素跨越的网格列 */
+                    grid-row: 1; /* 设置元素跨越的网格行 */
                 }
 
                 .memory-side {
-                    height: 220px;
+                    height: 220px; /* 设置元素高度 */
                 }
 
                 .footer-inner {
-                    flex-direction: column;
-                    align-items: flex-start;
+                    flex-direction: column; /* 设置弹性子元素的排列方向 */
+                    align-items: flex-start; /* 设置子元素的垂直对齐 */
                 }
             }
 
             @media (max-width: 430px) {
                 .hero-actions {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
+                    display: grid; /* 设置元素的显示方式 */
+                    grid-template-columns: 1fr 1fr; /* 设置网格的列数和列宽 */
                 }
 
                 .button {
-                    padding-inline: 14px;
-                    font-size: 14px;
+                    padding-inline: 14px; /* 设置左右内边距 */
+                    font-size: 14px; /* 设置文字大小 */
                 }
 
                 .photo-card {
-                    min-height: 250px;
-                    padding: 23px;
+                    min-height: 250px; /* 设置最小高度 */
+                    padding: 23px; /* 设置内边距 */
                 }
 
                 .card-content {
-                    min-height: 198px;
+                    min-height: 198px; /* 设置最小高度 */
                 }
 
                 .card-title {
-                    margin-top: 38px;
+                    margin-top: 38px; /* 设置上方外边距 */
                 }
 
                 .photo-hint {
-                    right: 15px;
-                    bottom: 15px;
+                    right: 15px; /* 设置距右侧的距离 */
+                    bottom: 15px; /* 设置距底部的距离 */
                 }
 
                 .like-card {
-                    min-height: 320px;
+                    min-height: 320px; /* 设置最小高度 */
                 }
             }
 
             @media (prefers-reduced-motion: reduce) {
                 html {
-                    scroll-behavior: auto;
+                    scroll-behavior: auto; /* 设置页面滚动方式 */
                 }
 
                 *,
                 *::before,
                 *::after {
-                    scroll-behavior: auto !important;
-                    transition-duration: 0.01ms !important;
-                    animation-duration: 0.01ms !important;
-                    animation-iteration-count: 1 !important;
+                    scroll-behavior: auto !important; /* 设置页面滚动方式 */
+                    transition-duration: 0.01ms !important; /* 设置过渡动画持续时间 */
+                    animation-duration: 0.01ms !important; /* 设置动画持续时间 */
+                    animation-iteration-count: 1 !important; /* 设置动画播放次数 */
                 }
 
                 [data-reveal] {
-                    opacity: 1;
-                    transform: none;
+                    opacity: 1; /* 设置透明度 */
+                    transform: none; /* 设置旋转、缩放或移动 */
                 }
             }
