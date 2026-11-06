@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - love-dyy
   workflow_dispatch:
 
 permissions:
