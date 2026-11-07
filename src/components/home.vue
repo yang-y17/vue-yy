@@ -280,26 +280,26 @@
         </section>
 
         <!-- 喜欢的人区域 -->
-        <!-- <section id="like" class="section">
-            <div class="shell"> -->
+        <section id="like" class="section">
+            <div class="shell">
                 <!-- 区域标题，居中显示，带有淡入动画效果 -->
-                <!-- <div class="section-heading center" data-reveal>
+                <div class="section-heading center" data-reveal>
                     <p class="eyebrow">A little memory</p>
                     <h2>喜欢的人</h2>
                     <div class="title-rule"></div>
-                </div> -->
+                </div>
 
                 <!-- 照片展示区域 -->
-                <!-- <div class="like-stage" data-reveal> -->
+                <div class="like-stage" data-reveal> 
                     <!-- 左侧照片 -->
-                    <!-- <figure class="memory-side">
+                    <figure class="memory-side">
                         <img
                             :src="memory.leftPhoto"
                             alt="左侧留念照片"
                             loading="lazy"
                             decoding="async"
                         >
-                    </figure> -->
+                    </figure>
 
                     <!--
                         中间的照片卡片：
@@ -307,15 +307,15 @@
                         aria-pressed 告诉读屏软件照片是否展开；
                         @click 点击时调用 togglePhoto('memory')。
                     -->
-                    <!-- <button
+                    <button
                         class="photo-card like-card"
                         :class="{ 'is-open': activePhoto === 'memory' }"
                         type="button"
                         :aria-pressed="activePhoto === 'memory'"
                         @click="togglePhoto('memory')"
-                    > -->
+                    >
                         <!-- 照片内容 -->
-                        <!-- <img
+                        <img
                             class="friend-photo"
                             :src="memory.photo"
                             :alt="
@@ -326,10 +326,10 @@
                             loading="lazy"
                             decoding="async"
                         >
-                        <span class="photo-overlay"></span> -->
+                        <span class="photo-overlay"></span>
 
                         <!-- 卡片内容 -->
-                        <!-- <span class="card-content">
+                        <span class="card-content">
                             <span class="card-index">A NOTE TO YOU</span>
                             <span>
                                 <span class="card-title">
@@ -339,20 +339,20 @@
                                     {{ memory.description }}
                                 </span>
                             </span>
-                        </span> -->
+                        </span>
 
                         <!-- 提示文字 -->
-                        <!-- <span class="photo-hint">
+                        <span class="photo-hint">
                             {{
                                 activePhoto === 'memory'
                                     ? '收起照片'
                                     : '点看回忆'
                             }}
                         </span>
-                    </button> -->
+                    </button>
 
                     <!-- 右侧照片 -->
-                    <!-- <figure class="memory-side">
+                    <figure class="memory-side">
                         <img
                             :src="memory.rightPhoto"
                             alt="右侧留念照片"
@@ -362,7 +362,7 @@
                     </figure>
                 </div>
             </div>
-        </section> -->
+        </section>
 
         <!-- 联系方式区域 -->
         <section id="contact" class="section section-soft">
