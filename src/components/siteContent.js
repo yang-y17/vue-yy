@@ -11,6 +11,7 @@ import youYPhoto from '../assets/imm/youY.jpg' // 导入右侧留念照片
 import zrtPhoto from '../assets/imm/zrt.jpg' // 导入 ID3 的照片
 import hxgPhoto from '../assets/imm/hxg.jpg'
 import yhxPhoto from '../assets/imm/yhx.jpg'
+import ckyPhoto from '../assets/imm/cky.jpg'
 
 // 顶部导航：label 是显示文字，href 是对应区块。
 export const navItems = [
@@ -145,6 +146,16 @@ export const friends = [
         cardClass: 'friend-yhx', // 使用绿色背景
         photo: yhxPhoto, // 点击后显示的照片
         photoAlt: 'ID8 的照片' // 照片替代文字
+    },
+    {
+        id: 'cky', // 程序内部使用的唯一名称
+        index: 'ID9', // 卡片左上角编号
+        title: '麻将大神', // 好友卡片标题
+        description: // 好友介绍文字
+            '大方稳重、帅气逼人。喜欢打游戏、打篮球、打打麻将。',
+        cardClass: 'friend-cky', // 使用绿色背景
+        photo: ckyPhoto, // 点击后显示的照片
+        photoAlt: 'ID9 的照片' // 照片替代文字
     }
 ]
 
