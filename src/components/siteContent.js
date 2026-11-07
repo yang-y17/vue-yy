@@ -9,6 +9,8 @@ import xyjPhoto from '../assets/imm/xyj.jpg' // 导入 ID5 的照片
 import yangYYPhoto from '../assets/imm/yangYY.png' // 导入左侧留念照片
 import youYPhoto from '../assets/imm/youY.jpg' // 导入右侧留念照片
 import zrtPhoto from '../assets/imm/zrt.jpg' // 导入 ID3 的照片
+import hxgPhoto from '../assets/imm/hxg.jpg'
+import yhxPhoto from '../assets/imm/yhx.jpg'
 
 // 顶部导航：label 是显示文字，href 是对应区块。
 export const navItems = [
@@ -25,7 +27,7 @@ export const skills = [
     {
         id: 'frontend', // 程序内部使用的唯一名称
         title: 'HTML / CSS / JS', // 卡片上显示的技能名称
-        value: 88, // 进度条最终会到 88%
+        value: 80, // 进度条最终会到 88%
         note: '喜欢把想法一步步变成真正能用的页面。' // 进度条下方的说明
     },
     {
@@ -45,7 +47,21 @@ export const skills = [
         title: '钱 / 金子', // 趣味爱好名称
         value: 100, // 进度条最终会到 100%
         note: '保留一点直白的快乐，也挺好。' // 趣味爱好说明
-    }
+    },
+    {
+        id: 'jiangji', // 趣味爱好的 id
+        title: '(AI)剪辑 / 拍摄', // 趣味爱好名称
+        value: 70, // 进度条最终会到 100%
+        note: '记录热爱的每一瞬间。' // 趣味爱好说明
+    },
+    {
+        id: 'sleep', // 趣味爱好的 id
+        title: '睡觉', // 趣味爱好名称
+        value: 99, // 进度条最终会到 100%
+        note: '没什么事不要打扰我睡觉。' // 趣味爱好说明
+    },
+    
+
 ]
 
 // 新增好友时复制一个对象并修改内容即可。
@@ -109,6 +125,26 @@ export const friends = [
         cardClass: 'friend-lzl', // 使用绿色背景
         photo: lzlPhoto, // 点击后显示的照片
         photoAlt: 'ID6 的照片' // 照片替代文字
+    },
+    {
+        id: 'hxg', // 程序内部使用的唯一名称
+        index: 'ID7', // 卡片左上角编号
+        title: '老班长', // 好友卡片标题
+        description: // 好友介绍文字
+            '大方稳重、帅气逼人。喜欢打游戏、老班长、打篮球。',
+        cardClass: 'friend-hxg', // 使用绿色背景
+        photo: hxgPhoto, // 点击后显示的照片
+        photoAlt: 'ID7 的照片' // 照片替代文字
+    },
+    {
+        id: 'yhx', // 程序内部使用的唯一名称
+        index: 'ID8', // 卡片左上角编号
+        title: '好兄弟', // 好友卡片标题
+        description: // 好友介绍文字
+            '大方稳重、帅气逼人。喜欢打游戏、打篮球。',
+        cardClass: 'friend-yhx', // 使用绿色背景
+        photo: yhxPhoto, // 点击后显示的照片
+        photoAlt: 'ID8 的照片' // 照片替代文字
     }
 ]
 
