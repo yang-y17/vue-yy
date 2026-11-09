@@ -19,7 +19,7 @@ export const navItems = [
     { label: '爱好 / 技能', href: '#skills' }, // 点击后滚动到技能区块
     { label: '好朋友们', href: '#friends' }, // 点击后滚动到好友区块
     { label: '作品集', href: '#portfolio' }, // 点击后滚动到作品区块
-    { label: '喜欢', href: '#like' }, // 点击后滚动到喜欢的人区块
+    // { label: '喜欢', href: '#like' }, // 点击后滚动到喜欢的人区块
     { label: '联系方式', href: '#contact' } // 点击后滚动到联系方式区块
 ]
 

@@ -1,10 +1,14 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import VueSetupExtend from 'vite-plugin-vue-setup-extend'
 
 // https://vite.dev/config/
 export default defineConfig({
   base: '/vue-yy/' ,
-  plugins: [vue()],
+  plugins: [
+    vue(),
+    VueSetupExtend()
+  ],
   build: {
     rollupOptions: {
       output: {
