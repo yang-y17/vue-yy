@@ -897,6 +897,41 @@
                 transform: none; /* 设置旋转、缩放或移动 */
             }
 
+            .resume-download {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 20px;
+            }
+
+            .resume-options {
+                display: grid;
+                gap: 8px;
+                width: min(100%, 320px);
+                margin-top: 12px;
+                padding: 12px;
+                background: #fff;
+                border: 1px solid #dbe2ea;
+                border-radius: 16px;
+                box-shadow: 0 12px 30px rgba(15, 35, 58, 0.1);
+            }
+
+            .resume-option {
+                display: block;
+                padding: 11px 14px;
+                color: var(--ink);
+                background: #f4f7fb;
+                border-radius: 10px;
+                text-align: center;
+                text-decoration: none;
+            }
+
+            .resume-option:hover {
+                color: #fff;
+                background: var(--blue);
+            }
+
             @media (max-width: 900px) {
                 .hero-inner {
                     grid-template-columns: 1fr; /* 设置网格的列数和列宽 */

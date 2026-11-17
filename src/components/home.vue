@@ -366,6 +366,7 @@
 
         <!-- 联系方式区域 -->
         <section id="contact" class="section section-soft">
+
             <div class="shell">
                 <!-- 区域标题，居中显示，带有淡入动画效果 -->
                 <div class="section-heading center" data-reveal>
@@ -382,32 +383,61 @@
                         :target：GitHub 等 http 链接在新窗口打开。
                         :rel：外部链接增加安全属性。
                     -->
-                    <a
-                        v-for="contact in contacts"
-                        :key="contact.label"
-                        class="contact-card"
-                        :href="contact.href"
-                        :target="
-                            contact.href.startsWith('http')
-                                ? '_blank'
-                                : undefined
-                        "
-                        :rel="
-                            contact.href.startsWith('http')
-                                ? 'noopener noreferrer'
-                                : undefined
-                        "
-                    >
-                        <span class="contact-icon" aria-hidden="true">
-                            {{ contact.icon }}
-                        </span>
-                        <span>
-                            <small>{{ contact.label }}</small>
-                            <strong>{{ contact.value }}</strong>
-                        </span>
-                    </a>
-                </div>
 
+                            <a
+                                v-for="contact in contacts"
+                                :key="contact.label"
+                                class="contact-card"
+                                :href="contact.href"
+                                :target="
+                                    contact.href.startsWith('http')
+                                        ? '_blank'
+                                        : undefined
+                                "
+                                :rel="
+                                    contact.href.startsWith('http')
+                                        ? 'noopener noreferrer'
+                                        : undefined
+                                "
+                            >
+                                <span class="contact-icon" aria-hidden="true">
+                                    {{ contact.icon }}
+                                </span>
+                                <span>
+                                    <small>{{ contact.label }}</small>
+                                    <strong>{{ contact.value }}</strong>
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="resume-download" data-reveal>
+                            <button
+                                class="button button-primary"
+                                type="button"
+                                :aria-expanded="showResumeMenu"
+                                aria-controls="resume-options"
+                                @click="showResumeMenu = !showResumeMenu"
+                            >
+                                下载简历
+                            </button>
+
+                            <div
+                                v-if="showResumeMenu"
+                                id="resume-options"
+                                class="resume-options"
+                            >
+                                <a
+                                    v-for="resume in resumeFiles"
+                                    :key="resume.id"
+                                    class="resume-option"
+                                    :href="baseUrl + 'resumes/' + resume.fileName"
+                                    :download="resume.fileName"
+                                    @click="showResumeMenu = false"
+                                >
+                                    {{ resume.title }}
+                                </a>
+                            </div>
+                        </div>
                 <!-- 联系提示 -->
                 <p class="contact-note">
                     如果我没有回复，说明我在睡觉，请不要继续打扰，谢谢。
@@ -474,7 +504,8 @@ import {
     memory, // “喜欢的人”内容
     navItems, // 顶部导航列表
     project, // 作品集数据
-    skills // 技能数据列表
+    skills, // 技能数据列表
+    resumeFiles
 } from './siteContent'
 
 // 响应式状态定义，这些ref会随着用户操作变化，并自动更新页面
@@ -488,6 +519,8 @@ const activePhoto = ref('')
 const activeSection = ref('about')
 // 控制返回顶部按钮的显示状态
 const toTopVisible = ref(false)
+const showResumeMenu = ref(false)
+const baseUrl = import.meta.env.BASE_URL
 
 // 保存观察器和动画帧，组件卸载时需要清理
 const animationFrames = []

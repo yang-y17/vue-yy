@@ -71,7 +71,7 @@ export const friends = [
     {
         id: 'czy', // 程序内部使用的唯一名称
         index: 'ID1', // 卡片左上角显示的编号
-        title: '中国好班长', // 好友卡片的标题
+        title: '中国好班长·大学同学', // 好友卡片的标题
         description: // 好友介绍文字
             '优雅大方、纯情专一的女大。喜欢打麻将、唱歌、喝酒，也喜欢鹿晗。',
         cardClass: 'friend-czy', // 控制这张卡片使用黄色背景
@@ -81,7 +81,7 @@ export const friends = [
     {
         id: 'whl', // 程序内部使用的唯一名称
         index: 'ID2', // 卡片左上角编号
-        title: '冷静行动派', // 好友卡片标题
+        title: '冷静行动派·大学同学',// 好友卡片标题
         description: // 好友介绍文字
             '善良大方，遇事冷静，纯情专一的女大。喜欢打麻将、喝酒，也喜欢王源。',
         cardClass: 'friend-whl', // 使用浅蓝色背景
@@ -91,7 +91,7 @@ export const friends = [
     {
         id: 'zrt', // 程序内部使用的唯一名称
         index: 'ID3', // 卡片左上角编号
-        title: '彤姐', // 好友卡片标题
+        title: '彤姐·大学同学', // 好友卡片标题
         description: // 好友介绍文字
             '温柔、快乐、自信大方，是麻将瘾最大的那位，也爱喝酒和学习。',
         cardClass: 'friend-zrt', // 使用粉色背景
@@ -101,7 +101,7 @@ export const friends = [
     {
         id: 'lky', // 程序内部使用的唯一名称
         index: 'ID4', // 卡片左上角编号
-        title: '靠谱队友', // 好友卡片标题
+        title: '靠谱队友·大学室友', // 好友卡片标题
         description: // 好友介绍文字
             '善良大方、遇事冷静的男大。喜欢打麻将、学习、打游戏和打网球。',
         cardClass: 'friend-lky', // 使用蓝色背景
@@ -111,7 +111,7 @@ export const friends = [
     {
         id: 'xyj', // 程序内部使用的唯一名称
         index: 'ID5', // 卡片左上角编号
-        title: '努力上进', // 好友卡片标题
+        title: '努力上进·大学同学', // 好友卡片标题
         description: // 好友介绍文字
             '大方稳重、努力上进的男大。喜欢打麻将、学习、打游戏和打网球。',
         cardClass: 'friend-xyj', // 使用橙色背景
@@ -121,7 +121,7 @@ export const friends = [
     {
         id: 'lzl', // 程序内部使用的唯一名称
         index: 'ID6', // 卡片左上角编号
-        title: '帅气逼人', // 好友卡片标题
+        title: '帅气逼人·大学同学', // 好友卡片标题
         description: // 好友介绍文字
             '大方稳重、帅气逼人的男大。喜欢打麻将、学习、打游戏和打网球。',
         cardClass: 'friend-lzl', // 使用绿色背景
@@ -131,7 +131,7 @@ export const friends = [
     {
         id: 'hxg', // 程序内部使用的唯一名称
         index: 'ID7', // 卡片左上角编号
-        title: '老班长', // 好友卡片标题
+        title: '老班长·好兄弟', // 好友卡片标题
         description: // 好友介绍文字
             '大方稳重、帅气逼人。喜欢打游戏、老班长、打篮球。',
         cardClass: 'friend-hxg', // 使用绿色背景
@@ -141,7 +141,7 @@ export const friends = [
     {
         id: 'yhx', // 程序内部使用的唯一名称
         index: 'ID8', // 卡片左上角编号
-        title: '好兄弟', // 好友卡片标题
+        title: '大哥·好兄弟', // 好友卡片标题
         description: // 好友介绍文字
             '大方稳重、帅气逼人。喜欢打游戏、打篮球。',
         cardClass: 'friend-yhx', // 使用绿色背景
@@ -151,7 +151,7 @@ export const friends = [
     {
         id: 'cky', // 程序内部使用的唯一名称
         index: 'ID9', // 卡片左上角编号
-        title: '麻将大神', // 好友卡片标题
+        title: '麻将大神·好兄弟', // 好友卡片标题
         description: // 好友介绍文字
             '大方稳重、帅气逼人。喜欢打游戏、打篮球、打打麻将。',
         cardClass: 'friend-cky', // 使用绿色背景
@@ -161,12 +161,30 @@ export const friends = [
     {
         id: 'fzc', // 程序内部使用的唯一名称
         index: 'ID10', // 卡片左上角编号
-        title: '好兄弟', // 好友卡片标题
+        title: '洋葱·好兄弟', // 好友卡片标题
         description: // 好友介绍文字
             '大方稳重、帅气逼人。喜欢打游戏、打篮球、打打麻将。',
         cardClass: 'friend-fzc', // 使用绿色背景
         photo: fzcPhoto, // 点击后显示的照片
         photoAlt: 'ID9 的照片' // 照片替代文字
+    }
+]
+
+export const resumeFiles =[
+    {
+        id: 'resume1', // 程序内部使用的唯一名称
+        title: 'AIGC视频剪辑',
+        fileName:'restumes-frontend.pdf' // 文件标题
+    },
+    {
+        id: 'resume2', // 程序内部使用的唯一名称
+        title: '前端开发',
+        fileName:'resumes-two.pdf' // 文件标题
+    },
+    {
+        id: 'resume3', // 程序内部使用的唯一名称
+        title: '新媒体运营/内容运营',
+        fileName:'resumes-one.pdf' // 文件标题
     }
 ]
 
